@@ -1,6 +1,6 @@
 Android + Retrofit 2 + EventBus - example
 ================================================
-Here is an example of usage [Retrofit 2](http://square.github.io/retrofit/) and [EventBus](http://greenrobot.org/eventbus/). Moreover project based on nice binding library [Butter Knife](http://jakewharton.github.io/butterknife/).
+Here is an example of usage [Retrofit 2](http://square.github.io/retrofit/) and [EventBus](http://greenrobot.org/eventbus/). Moreover project based on nice binding library [Butter Knife](http://jakewharton.github.io/butterknife/). The REST API service is provided by [https://darksky.net](https://darksky.net).
 
 Goals
 --------
