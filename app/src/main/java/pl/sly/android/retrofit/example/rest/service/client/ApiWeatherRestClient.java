@@ -25,7 +25,7 @@ public class ApiWeatherRestClient extends BaseRestClient {
     private static final String API_URL = BASE_URL + API_KEY + "/";
     private static final int TIMEOUT = 10;
     private static final int SLEEP_TIMEOUT = 5;
-    private static final boolean mSleepUserInterceptor = false;
+    private static final boolean USE_SLEEP_INTERCEPTOR = false;
     private static final ApiWeatherRestClient INSTANCE = new ApiWeatherRestClient();
 
     private Retrofit mRetrofit;
@@ -57,7 +57,7 @@ public class ApiWeatherRestClient extends BaseRestClient {
         }
 
         //simulate long running request
-        if (mSleepUserInterceptor) {
+        if (USE_SLEEP_INTERCEPTOR) {
             NetworkSleepInterceptor networkSleepInterceptor = new NetworkSleepInterceptor(
                     SLEEP_TIMEOUT, TimeUnit.SECONDS);
             okHttpClientBuilder
